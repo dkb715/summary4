@@ -1,291 +1,291 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Employee Generator</title>
-    <style>
-        body {
-            text-align: center;
-            padding: 10px;
-        }
-
-        .column {
-            display: grid;
-            grid-template-columns: auto;
-            background-color: lightgray;
-            border: solid bisque;
-            float: right;
-            width: 100%;
-        }
-
-        .navText {
-            text-align: center;
-
-        }
-
-
-        .navbar-brand {
-            text-align: center;
-            height: 50px;
-            color: darksalmon;
-        }
-
-        .navbar.navbar-light {
-            border: solid bisque;
-            color: darksalmon;
-            text-align: center;
-            height: 150px;
-        }
-
-        #managers {
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            position: relative;
-            padding: 10px;
-            padding-left: 275px;
-
-        }
-
-        #employees {
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            position: relative;
-            padding: 10px;
-            padding-left: 100px;
-        }
-
-        #interns {
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            position: relative;
-            padding: 10px;
-            padding-left: 250px;
-
-        }
-
-        .a {
-            text-align: left;
-        }
-
-        img {
-            max-width: 15%;
-            max-height: 15%;
-            text-align: left;
-        }
-
-        .card-header {
-            text-align: left;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="container-fluid">
-        <div class="title">
-            <nav class="navbar navbar-light" style="background-color: darksalmon;">
-                <div class="mx-auto" style="width: 250px; color: floralwhite;">
-                    <heading class="navbar-brand mb-0" style="color: floralwhite;">My Team</heading>
-                </div>
-            </nav>
-        </div>
-        <div class="column">
-            <div class="row" id="managers">
-                <div class="col-lg-6">
-                    <div class="card text-white bg-success mb-3" style="max-width: 24rem;">
-                        <div class="card-header">
-
-                            <h5 class="card-title">Name</h5>
-                            <p>
-                                <img src="https://img.favpng.com/20/0/21/manager-icon-png-favpng-ddESenWt4SY6Yi1gpQDS2g23W.jpg"
-                                    alt="logo">
-                                Manager</p>
+        <html lang="en">
+        
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+                integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+            <title>Employee Generator</title>
+            <style>
+                body {
+                    text-align: center;
+                    padding: 10px;
+                }
+        
+                .column {
+                    display: grid;
+                    grid-template-columns: auto;
+                    background-color: lightgray;
+                    border: solid bisque;
+                    float: right;
+                    width: 100%;
+                }
+        
+                .navText {
+                    text-align: center;
+        
+                }
+        
+        
+                .navbar-brand {
+                    text-align: center;
+                    height: 50px;
+                    color: darksalmon;
+                }
+        
+                .navbar.navbar-light {
+                    border: solid bisque;
+                    color: darksalmon;
+                    text-align: center;
+                    height: 150px;
+                }
+        
+                #managers {
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    position: relative;
+                    padding: 10px;
+                    padding-left: 275px;
+        
+                }
+        
+                #employees {
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    position: relative;
+                    padding: 10px;
+                    padding-left: 100px;
+                }
+        
+                #interns {
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    position: relative;
+                    padding: 10px;
+                    padding-left: 250px;
+        
+                }
+        
+                .a {
+                    text-align: left;
+                }
+        
+                img {
+                    max-width: 15%;
+                    max-height: 15%;
+                    text-align: left;
+                }
+        
+                .card-header {
+                    text-align: left;
+                }
+            </style>
+        </head>
+        
+        <body>
+            <div class="container-fluid">
+                <div class="title">
+                    <nav class="navbar navbar-light" style="background-color: darksalmon;">
+                        <div class="mx-auto" style="width: 250px; color: floralwhite;">
+                            <heading class="navbar-brand mb-0" style="color: floralwhite;">My Team</heading>
                         </div>
-                        <div class="card-body">
-                            <p class="card-text">
-                                <ul class="a">
-                                    <p>ID:</p>
-                                    <p>Email:</p>
-                                    <p>Office #:</p>
-                                </ul>
-                            </p>
+                    </nav>
+                </div>
+                <div class="column">
+                    <div class="row" id="managers">
+                        <div class="col-lg-6">
+                            <div class="card text-white bg-success mb-3" style="max-width: 24rem;">
+                                <div class="card-header">
+        
+                                    <h5 class="card-title">DKB</h5>
+                                    <p>
+                                        <img src="https://img.favpng.com/20/0/21/manager-icon-png-favpng-ddESenWt4SY6Yi1gpQDS2g23W.jpg"
+                                            alt="logo">
+                                        Manager</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <ul class="a">
+                                            <p>ID:1</p>
+                                            <p>Email:donavankbrown@gmail.com</p>
+                                            <p>Office #:3</p>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card text-white bg-success mb-3" style="max-width: 24rem;">
+                                <div class="card-header">
+        
+                                    <h5 class="card-title">steve</h5>
+                                    <p> <img src="https://img.favpng.com/20/0/21/manager-icon-png-favpng-ddESenWt4SY6Yi1gpQDS2g23W.jpg"
+                                            alt="logo">
+                                        Manager</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <ul class="a">
+                                            <p>ID:2</p>
+                                            <p>Email:3</p>
+                                            <p>Office #:3</p>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="card text-white bg-success mb-3" style="max-width: 24rem;">
-                        <div class="card-header">
-
-                            <h5 class="card-title">Name</h5>
-                            <p> <img src="https://img.favpng.com/20/0/21/manager-icon-png-favpng-ddESenWt4SY6Yi1gpQDS2g23W.jpg"
-                                    alt="logo">
-                                Manager</p>
+                    <div class="row" id="employees">
+                        <div class="col-md-3">
+                            <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                                <div class="card-header">
+        
+                                    <h5 class="card-title">tom</h5>
+                                    <p> <img src="https://cdn4.iconfinder.com/data/icons/data-management-1-2/50/20-512.png"
+                                            alt="logo">
+                                        Engineer</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <ul class="a">
+                                            <p>ID:45</p>
+                                            <p>Email:tom</p>
+                                            <p>Github:dkb</p>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <p class="card-text">
-                                <ul class="a">
-                                    <p>ID:</p>
-                                    <p>Email:</p>
-                                    <p>Office #:</p>
-                                </ul>
-                            </p>
+                        <div class="col-md-3">
+        
+                            <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                                <div class="card-header">
+                                    <h5 class="card-title">we</h5>
+        
+                                    <p> <img src="https://cdn4.iconfinder.com/data/icons/data-management-1-2/50/20-512.png"
+                                            alt="logo">
+                                        Engineer</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <ul class="a">
+                                            <p>ID:df</p>
+                                            <p>Email:wevef</p>
+                                            <p>Github:v</p>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+        
+                            <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                                <div class="card-header">
+                                    <h5 class="card-title">grvrg</h5>
+                                    <p> <img src="https://cdn4.iconfinder.com/data/icons/data-management-1-2/50/20-512.png"
+                                            alt="logo">
+                                        Engineer</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <ul class="a">
+                                            <p>ID:vrgv</p>
+                                            <p>Email:rgvr</p>
+                                            <p>Github:vrgv</p>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+        
+                            <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                                <div class="card-header">
+                                    <h5 class="card-title">v</h5>
+                                    <p> <img src="https://cdn4.iconfinder.com/data/icons/data-management-1-2/50/20-512.png"
+                                            alt="logo">
+                                        Engineer</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <ul class="a">
+                                            <p>ID:v</p>
+                                            <p>Email:gfvrg</p>
+                                            <p>Github:vrg</p>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+                    <div class="row" id="interns">
+                        <div class="col-sm-4">
+                            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                <div class="card-header">
+                                    <h5 class="card-title">vrv</h5>
+                                    <p> <img src="studentlogo.png" alt="logo">
+                                        Intern</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <ul class="a">
+                                            <p>ID:rv</p>
+                                            <p>Email:vrg</p>
+                                            <p>School:gr</p>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+        
+                            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                <div class="card-header">
+                                    <h5 class="card-title"></h5>
+                                    <p> <img src="studentlogo.png" alt="logo">
+                                        Intern</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <ul class="a">
+                                            <p>ID:r</p>
+                                            <p>Email:vgfg</p>
+                                            <p>School:gfd</p>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+        
+                            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                <div class="card-header">
+                                    <h5 class="card-title">dvvddf</h5>
+                                    <p> <img src="studentlogo.png" alt="logo">
+                                        Intern</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <ul class="a">
+                                            <p>ID:dv</p>
+                                            <p>Email:d</p>
+                                            <p>School:dv</p>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row" id="employees">
-                <div class="col-md-3">
-                    <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
-                        <div class="card-header">
-
-                            <h5 class="card-title">Name</h5>
-                            <p> <img src="https://cdn4.iconfinder.com/data/icons/data-management-1-2/50/20-512.png"
-                                    alt="logo">
-                                Engineer</p>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">
-                                <ul class="a">
-                                    <p>ID:</p>
-                                    <p>Email:</p>
-                                    <p>Github:</p>
-                                </ul>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-
-                    <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
-                        <div class="card-header">
-                            <h5 class="card-title">Name</h5>
-
-                            <p> <img src="https://cdn4.iconfinder.com/data/icons/data-management-1-2/50/20-512.png"
-                                    alt="logo">
-                                Engineer</p>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">
-                                <ul class="a">
-                                    <p>ID:</p>
-                                    <p>Email:</p>
-                                    <p>Github:</p>
-                                </ul>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-
-                    <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
-                        <div class="card-header">
-                            <h5 class="card-title">Name</h5>
-                            <p> <img src="https://cdn4.iconfinder.com/data/icons/data-management-1-2/50/20-512.png"
-                                    alt="logo">
-                                Engineer</p>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">
-                                <ul class="a">
-                                    <p>ID:</p>
-                                    <p>Email:</p>
-                                    <p>Github:</p>
-                                </ul>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-
-                    <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
-                        <div class="card-header">
-                            <h5 class="card-title">Name</h5>
-                            <p> <img src="https://cdn4.iconfinder.com/data/icons/data-management-1-2/50/20-512.png"
-                                    alt="logo">
-                                Engineer</p>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">
-                                <ul class="a">
-                                    <p>ID:</p>
-                                    <p>Email:</p>
-                                    <p>Github:</p>
-                                </ul>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="row" id="interns">
-                <div class="col-sm-4">
-                    <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-                        <div class="card-header">
-                            <h5 class="card-title">Name</h5>
-                            <p> <img src="studentlogo.png" alt="logo">
-                                Intern</p>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">
-                                <ul class="a">
-                                    <p>ID:</p>
-                                    <p>Email:</p>
-                                    <p>School:</p>
-                                </ul>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-
-                    <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-                        <div class="card-header">
-                            <h5 class="card-title">Name</h5>
-                            <p> <img src="studentlogo.png" alt="logo">
-                                Intern</p>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">
-                                <ul class="a">
-                                    <p>ID:</p>
-                                    <p>Email:</p>
-                                    <p>School:</p>
-                                </ul>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-
-                    <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-                        <div class="card-header">
-                            <h5 class="card-title">Name</h5>
-                            <p> <img src="studentlogo.png" alt="logo">
-                                Intern</p>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">
-                                <ul class="a">
-                                    <p>ID:</p>
-                                    <p>Email:</p>
-                                    <p>School:</p>
-                                </ul>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-</body>
-
-</html>
+        
+        
+        </body>
+        
+        </html>
