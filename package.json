@@ -1,0 +1,33 @@
+{
+  "name": "EmployeeSummaryTake3",
+  "version": "1.0.0",
+  "description": "## Overview",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose test/*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "generate-html": "^1.0.1",
+    "inquirer": "^7.0.4",
+    "jest": "^25.1.0",
+    "test": "^0.6.0",
+    "util": "^0.12.1"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkb715/summary3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dkb715/summary3/issues"
+  },
+  "homepage": "https://github.com/dkb715/summary3#readme"
+}
