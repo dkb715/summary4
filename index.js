@@ -18,13 +18,13 @@ inquirer
 //User prompt in the terminal
 function promptUser(userChoice) {
     return inquirer.prompt([{
-        
-            type: "input",
-            name: "nameManager",
-            message: "Enter name of Manager: "
-        },
-      
-        
+
+        type: "input",
+        name: "nameManager",
+        message: "Enter name of Manager: "
+    },
+
+
     //     {
     //     type: "input",
     //     message: "What is your name?",
@@ -47,41 +47,41 @@ function promptUser(userChoice) {
     //         addManager ()
     //     } 
     // }),
-    
+
     {
         type: "input",
         message: "What is your office number?",
         name: "office",
     },
     {
-    type: "input",
-    name: "nameMan",
-    message: "Enter name of second Manager: "
-},
+        type: "input",
+        name: "nameMan",
+        message: "Enter name of second Manager: "
+    },
 
 
-//     {
-//     type: "input",
-//     message: "What is your name?",
-//     name: "name",
+    //     {
+    //     type: "input",
+    //     message: "What is your name?",
+    //     name: "name",
 
-// },
-{
-type: "input",
-message: "What is your ID number?",
-name: "manid",
-},
-{
-type: "input",
-message: "What is your email address?",
-name: "manemail",
-},
-    
-{
-    type: "input",
-    message: "What is your office number?",
-    name: "manoffice",
-},
+    // },
+    {
+        type: "input",
+        message: "What is your ID number?",
+        name: "manid",
+    },
+    {
+        type: "input",
+        message: "What is your email address?",
+        name: "manemail",
+    },
+
+    {
+        type: "input",
+        message: "What is your office number?",
+        name: "manoffice",
+    },
 
     {
         type: "input",
@@ -240,45 +240,45 @@ name: "manemail",
 
 // promptUser()
 // .then(function ({ name, id, email, position, office, username, school }) {
-    // const team = `https://dkb715.github.io/summary4/`
-    // const userChoice = require(userChoice)
+// const team = `https://dkb715.github.io/summary4/`
+// const userChoice = require(userChoice)
 
-    // .get(team).then(function (res) {
-    //             //this will console log the users responses
-    //             console.log(res);
-    //             data = {
-    //                 position: res.data.name,
-    //                 id: res.data.id,
-    //                 email: res.data.email,
-    //                 position: res.data.position,
-    //                 office: res.data.office,
-    //                 username: res.data.username,
-    //                 school: res.data.school
-    //             }
+// .get(team).then(function (res) {
+//             //this will console log the users responses
+//             console.log(res);
+//             data = {
+//                 position: res.data.name,
+//                 id: res.data.id,
+//                 email: res.data.email,
+//                 position: res.data.position,
+//                 office: res.data.office,
+//                 username: res.data.username,
+//                 school: res.data.school
+//             }
 
-            // });
-    // });
-    async function init() {
-        console.log("hi")
-        try {
-            const answers = await promptUser();
-      
-            const html = generateHTML(answers);
-          //writeFile will creat html page with the answers
-            await writeFileAsync("index.html", html);
-      
-            console.log("Successfully wrote to index.html");
-        } catch (err) {
-            console.log(err);
-        }
-      }
-      
-      init();
-      
-  
-    function generateHTML(answers) {
-        console.log(answers)
-        return `<!DOCTYPE html>
+// });
+// });
+async function init() {
+    console.log("hi")
+    try {
+        const answers = await promptUser();
+
+        const html = generateHTML(answers);
+        //writeFile will creat html page with the answers
+        await writeFileAsync("index.html", html);
+
+        console.log("Successfully wrote to index.html");
+    } catch (err) {
+        console.log(err);
+    }
+}
+
+init();
+
+
+function generateHTML(answers) {
+    console.log(answers)
+    return `<!DOCTYPE html>
         <html lang="en">
         
         <head>
@@ -569,7 +569,7 @@ name: "manemail",
         </body>
         
         </html>`;
-    }
-    
-        
-            module.exports = generateHTML
+}
+
+
+module.exports = generateHTML
